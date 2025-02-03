@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
+import emailjs from 'emailjs-com';
 
 function App() {
   const [expandedSection, setExpandedSection] = useState(null);
@@ -63,6 +64,23 @@ function App() {
           <p>websites I’ve developed and I am currently managing for local businesses.
           </p>
         </div>
+        <div className="web-dev-projects-section">
+            <div className="web-project">
+              <img alt="Project" />
+              <h4>SendMe</h4>
+              <p>description of project</p>
+            </div>
+            <div className="web-project">
+              <img alt="Project" />
+              <h4>SendMe</h4>
+              <p>description of project</p>
+            </div>
+            <div className="web-project">
+              <img alt="Project" />
+              <h4>SendMe</h4>
+              <p>description of project</p>
+            </div>
+          </div>
         <div className={`arrow ${expandedSection === "section4" ? "hidden" : ""}`}>&rarr;</div>
         <div className={`exit ${expandedSection === "section4" ? "visible" : "hidden"}`} onClick={() => handleExpand(null)}>×</div>
       </div>
@@ -72,6 +90,23 @@ function App() {
           <p>Game you can actually play! Best games? Probably not. But games I force all my friends to play? Absolutely.
           </p>
         </div>
+        <div className="game-dev-projects-section">
+            <div className="game-project">
+              <img alt="Project" />
+              <h4>SendMe</h4>
+              <p>description of project</p>
+            </div>
+            <div className="game-project">
+              <img alt="Project" />
+              <h4>SendMe</h4>
+              <p>description of project</p>
+            </div>
+            <div className="game-project">
+              <img alt="Project" />
+              <h4>SendMe</h4>
+              <p>description of project</p>
+            </div>
+          </div>
         <div className={`arrow ${expandedSection === "section5" ? "hidden" : ""}`}>&rarr;</div>
         <div className={`exit ${expandedSection === "section5" ? "visible" : "hidden"}`} onClick={() => handleExpand(null)}>×</div>
       </div>
@@ -80,6 +115,14 @@ function App() {
         <div className="section-details">
           <p>Email me, call me, send me a letter, a text or a smoke signal. All acceptable forms of correspondence.
           </p>
+        </div>
+        <div className="contact-form" onClick={(e) => e.stopPropagation()}>
+          <form method="post">
+            <input type="text" name="Name" placeholder="Name"/>
+            <input type="email" name="Email" placeholder="Your email (so I can reply)"/>
+            <textarea name="Message" placeholder="Message"/>
+            <button type="submit" class="btn-submit">Send</button>
+          </form>
         </div>
         <div className={`arrow ${expandedSection === "section6" ? "hidden" : ""}`}>&rarr;</div>
         <div className={`exit ${expandedSection === "section6" ? "visible" : "hidden"}`} onClick={() => handleExpand(null)}>×</div>

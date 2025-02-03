@@ -134,7 +134,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  padding: 1rem;
 }
 
 .expanded-section2 .about-me {
@@ -283,11 +283,13 @@ body {
   grid-row: 4/7;
 }
 
-.scroll-content {
+.scroll-content,
+.web-dev-projects-section,
+.game-dev-projects-section {
   display: none;
 }
 
-.scroll-item {
+.scroll-item, .web-project, .game-project {
   width: 200px;
   padding: 10px;
   flex-shrink: 0;
@@ -305,7 +307,10 @@ img {
   padding: 10px;
 }
 
-.expanded-section3 .scroll-content {
+
+.expanded-section3 .scroll-content,
+.expanded-section4 .web-dev-projects-section,
+.expanded-section5 .game-dev-projects-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -322,3 +327,60 @@ img {
   max-height: 100%;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  width: 200px;
+}
+
+input {
+  border-radius: 5px;
+  background-color: white;
+  color: #f2535a;
+  height: 1.5rem;
+  font-family: monospace;
+  font-size: 0.7rem;
+}
+
+
+textarea {
+  border-radius: 5px;
+  background-color: white;
+  color:#f2535a;
+  font-family: monospace;
+  font-size: 0.7rem;
+}
+
+.btn-submit {
+  background-color: #f2535a;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  height: 2.5rem;
+}
+
+.btn-submit:hover {
+  background-color: white;
+  color:#f2535a;
+  font-weight: bold;
+  border: 2px solid #f2535a;
+}
+
+.btn-submit:active {
+  transform: scale(0.9);
+}
+
+.contact-form {
+  display: none;
+}
+
+.expanded-section6 .contact-form {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
