@@ -296,9 +296,19 @@ body {
   margin: 10px;
 }
 
+.web-project p, .scroll-content p {
+  font-size: 0.8rem;
+}
+
 img {
   height: 50px;
   width: 50px;
+}
+
+.description-container {
+  width: 100px;
+  display: inline-block;
+  word-wrap: break-word;
 }
 
 .expanded-section3 .section-3 {

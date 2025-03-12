@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
 import emailjs from 'emailjs-com';
+import sendmeicon from './assets/sendmeicon.png';
+import makearezzy from './assets/makearezzy.png';
+import rezzymanagement from './assets/rezzymanagement.png'
 
 function App() {
   const [expandedSection, setExpandedSection] = useState(null);
@@ -29,29 +32,27 @@ function App() {
   
         )}
       </div>
-
-      {/* Use the Card component for each section */}
       <div className={`section section-3 ${expandedSection === "section3" ? "disable-hover" : ""}`} onClick={() => handleExpand("section3")}>
         <Card title="Software" />
         <div className="section-details">
-          <p>projects I've worked on. These are live for public users, used by businesses or just fun stuff I made for myself.
+          <p>Shhhh! This section is still being built.
           </p>
         </div>
           <div className="scroll-content">
             <div className="scroll-item">
               <img alt="Project" />
-              <h4>SendMe</h4>
-              <p>description of project</p>
+              <h4>A real project</h4>
+              <p>description of real project</p>
             </div>
             <div className="scroll-item">
               <img alt="Project" />
-              <h4>SendMe</h4>
-              <p>description of project</p>
+              <h4>Another very real project</h4>
+              <p>The potential of a project description</p>
             </div>
             <div className="scroll-item">
               <img alt="Project" />
-              <h4>SendMe</h4>
-              <p>description of project</p>
+              <h4>Super real project that totally exists</h4>
+              <p>description of super real project that totally exists</p>
             </div>
           </div>
         </div>
@@ -61,24 +62,24 @@ function App() {
       <div className={`section section-4 ${expandedSection === "section4" ? "disable-hover" : ""}`} onClick={() => handleExpand("section4")}>
         <Card title="Web Dev" />
         <div className="section-details">
-          <p>websites I’ve developed and I am currently managing for local businesses.
+          <p>web apps I’ve built and can (probably) be used.
           </p>
         </div>
         <div className="web-dev-projects-section">
             <div className="web-project">
-              <img alt="Project" />
-              <h4>SendMe</h4>
-              <p>description of project</p>
+              <img alt="SendMe project logo" src={sendmeicon} />
+              <h4><a href="sendmethestuff.netlify.app">SendMe</a></h4>
+              <p>Cloud-based file-sharing app, inspired by one of my favorite web application (WeTransfer), built with React, Node.js, & Google Cloud Storage.</p>
             </div>
             <div className="web-project">
-              <img alt="Project" />
-              <h4>SendMe</h4>
-              <p>description of project</p>
+              <img alt="Make-a-rezzy logo" src={makearezzy}/>
+              <h4>Make-A-Rezzy</h4>
+              <p>Restaurant reservation system built with React and PostgreSQL. Connected to the management system, the app dynamically displays reservation times and dates based on availability. </p>
             </div>
             <div className="web-project">
-              <img alt="Project" />
-              <h4>SendMe</h4>
-              <p>description of project</p>
+              <img alt="rezzy management logo" src={makearezzy}/>
+              <h4>Rezzy Management</h4>
+              <p>Sister web-app for managing reservations and setting rules. Features a search section for quick look-up and sorting. Built using React, Express and PostgreSQL</p>
             </div>
           </div>
         <div className={`arrow ${expandedSection === "section4" ? "hidden" : ""}`}>&rarr;</div>
