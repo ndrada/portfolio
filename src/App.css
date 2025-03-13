@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+
 body {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
   font-family: 'Poppins', sans-serif;
   background-color: #1f1f1f;
+  color: white;
+  height: 90vh;
+  width: 90vw;
 }
 
 a {
@@ -102,7 +112,6 @@ a:hover {
   color: #f2535a;
 }
 
-
 .section-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
@@ -154,37 +163,43 @@ a:hover {
   overflow-y: auto;
 }
 
+/* software */
 .section-3 {
   grid-column: 2/3;
   grid-row: 1/3;
 }
 
+/* web dev */
 .section-4 {
   grid-column: 2/3;
   grid-row: 3/5;
 }
 
+/* game dev */
 .section-5 {
   grid-column: 2/3;
   grid-row: 5/7;
 }
 
+/* get in touch */
 .section-6 {
   grid-column: 3/5;
   grid-row: 1/3;
 }
 
+/* in progress */
 .section-7 {
   grid-column: 3/4;
   grid-row: 3/7;
 }
 
+/* socials */
 .section-8 {
   grid-column: 4/5;
   grid-row: 3/7;
 }
 
-/* Expanded Section 3 behavior */
+/* expanded sections behavior */
 .expanded-section3 .section-3 {
   grid-column: 2/5;
   grid-row: 1/5;
@@ -293,42 +308,54 @@ a:hover {
   grid-row: 4/7;
 }
 
-.scroll-content,
+.software-projects-section,
 .web-dev-projects-section,
 .game-dev-projects-section {
   display: none;
 }
 
-.scroll-item, .web-project, .game-project {
+.web-project {
   width: 200px;
   padding: 10px;
   flex-shrink: 0;
   margin: 10px;
 }
 
-.web-project p, .scroll-content p, .game-project p {
+.software-project {
+  width: 500px;
+}
+
+.game-project {
+  width: 300px;
+  padding: 10px;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+.web-project p, .software-project p, .game-project p {
   font-size: 0.8rem;
 }
+
+#details, #details a {
+  font-size: 0.6rem;
+}
+
+#details a {
+  font-weight: bold;
+  color:#f2535a;
+}
+
+#details a:hover {
+  color: white;
+}
+
 
 img {
   height: 50px;
   width: 50px;
 }
 
-.description-container {
-  width: 100px;
-  display: inline-block;
-  word-wrap: break-word;
-}
-
-.expanded-section3 .section-3 {
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 10px;
-}
-
-
-.expanded-section3 .scroll-content,
+.expanded-section3 .software-projects-section,
 .expanded-section4 .web-dev-projects-section,
 .expanded-section5 .game-dev-projects-section {
   display: flex;
@@ -340,7 +367,7 @@ img {
   overflow-x: auto;
 }
 
-/* Enable vertical scrolling for Section 7 */
+/* enable vertical scrolling for 'in progress' section */
 .expanded-section7 .section-7 {
   overflow-y: auto;
   padding: 10px;
@@ -363,7 +390,6 @@ input {
   font-family: monospace;
   font-size: 0.7rem;
 }
-
 
 textarea {
   border-radius: 5px;
