@@ -5,6 +5,9 @@ import emailjs from 'emailjs-com';
 import sendmeicon from './assets/sendmeicon.png';
 import makearezzy from './assets/makearezzy.png';
 import rezzymanagement from './assets/rezzymanagement.png'
+import scaryjerry from './assets/scaryjerry.png'
+import ghostpop from './assets/ghostpop.png'
+
 
 function App() {
   const [expandedSection, setExpandedSection] = useState(null);
@@ -68,18 +71,18 @@ function App() {
         <div className="web-dev-projects-section">
             <div className="web-project">
               <img alt="SendMe project logo" src={sendmeicon} />
-              <h4><a href="sendmethestuff.netlify.app">SendMe</a></h4>
+              <h4><a href="https://sendmethestuff.netlify.app" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">SendMe</a></h4>
               <p>Cloud-based file-sharing app, inspired by one of my favorite web application (WeTransfer), built with React, Node.js, & Google Cloud Storage.</p>
             </div>
             <div className="web-project">
               <img alt="Make-a-rezzy logo" src={makearezzy}/>
-              <h4>Make-A-Rezzy</h4>
+              <h4><a href="https:// make-a-rezzy.netlify.app" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">Make-A-Rezzy</a></h4>
               <p>Restaurant reservation system built with React and PostgreSQL. Connected to the management system, the app dynamically displays reservation times and dates based on availability. </p>
             </div>
             <div className="web-project">
-              <img alt="rezzy management logo" src={makearezzy}/>
-              <h4>Rezzy Management</h4>
-              <p>Sister web-app for managing reservations and setting rules. Features a search section for quick look-up and sorting. Built using React, Express and PostgreSQL</p>
+              <img alt="rezzy management logo" src={rezzymanagement}/>
+              <h4><a href="https://manage-rezzy.netlify.app" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">Rezzy</a></h4>
+              <p>Sister web-app for managing reservations and setting rules. Features a search section for quick look-up and sorting. Built using React, Node.js and PostgreSQL</p>
             </div>
           </div>
         <div className={`arrow ${expandedSection === "section4" ? "hidden" : ""}`}>&rarr;</div>
@@ -93,19 +96,14 @@ function App() {
         </div>
         <div className="game-dev-projects-section">
             <div className="game-project">
-              <img alt="Project" />
-              <h4>SendMe</h4>
-              <p>description of project</p>
+              <img alt="Scarry Jerry game title" src={scaryjerry}/>
+              <h4><a href="https://ndrada.itch.io/scary-jerry">Scary Jerry</a></h4>
+              <p>Jerry is a zombie with a chainsaw. You have to find the lamp (for obvious reasons) and the gun (for less obvious reasons). Jerry is programmed to kill you on sight. Just saying. Developed in Unity with lots of C#. Good luck!</p>
             </div>
             <div className="game-project">
-              <img alt="Project" />
-              <h4>SendMe</h4>
-              <p>description of project</p>
-            </div>
-            <div className="game-project">
-              <img alt="Project" />
-              <h4>SendMe</h4>
-              <p>description of project</p>
+              <img alt="Ghost pop game title" src={ghostpop}/>
+              <h4><a href="https://ndrada.itch.io/ghost-pop">Ghost Pop</a></h4>
+              <p>If you like Angry Birds, this is definitely its cousin game (or less accomplished twin). 10 levels. Developed in Unity.</p>
             </div>
           </div>
         <div className={`arrow ${expandedSection === "section5" ? "hidden" : ""}`}>&rarr;</div>

@@ -10,6 +10,16 @@ body {
   background-color: #1f1f1f;
 }
 
+a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+
+a:hover {
+  color:#f2535a;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 25% 35% 20% 20%;
@@ -296,7 +306,7 @@ body {
   margin: 10px;
 }
 
-.web-project p, .scroll-content p {
+.web-project p, .scroll-content p, .game-project p {
   font-size: 0.8rem;
 }
 
