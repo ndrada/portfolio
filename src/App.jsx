@@ -71,7 +71,7 @@ function App() {
               </div>
               <div className="web-project">
                 <img alt="Make-a-rezzy logo" src={makearezzy}/>
-                <h4><a href="https:// make-a-rezzy.netlify.app" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">Make-A-Rezzy</a></h4>
+                <h4><a href="https://make-a-rezzy.netlify.app" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">Make-A-Rezzy</a></h4>
                 <p>Restaurant reservation system built with React and PostgreSQL. Connected to the management system, the app dynamically displays reservation times and dates based on availability. </p>
               </div>
               <div className="web-project">
