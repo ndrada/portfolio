@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 import Card from "./components/Card";
-import SoftwarePage from "./software";
-import emailjs from 'emailjs-com';
 import sendmeicon from './assets/sendmeicon.png';
 import makearezzy from './assets/makearezzy.png';
 import rezzymanagement from './assets/rezzymanagement.png'
@@ -135,6 +133,22 @@ function App() {
           <div className="section-details">
             <p>You can stalk me or be my friend. The ball’s in your court.
             </p>
+          </div>
+          <div className="socials">
+            <div className="socials-list">
+              <div className="social">
+                <img src="/githubicon.png"></img>
+                <a href="https://github.com/ndrada">GitHub</a>
+              </div>
+              <div className="social">
+                <img src="/linkedinicon.png"></img>
+                <a href="https://www.linkedin.com/in/ndrada/">LinkedIn</a>
+              </div>
+              <div className="social">
+                <img src="/itchioicon.png"></img>
+                <a href="https://itch.io/profile/ndrada">Itch.io</a>
+              </div>
+            </div>
           </div>
           <div className={`arrow ${expandedSection === "section8" ? "hidden" : ""}`}>&rarr;</div>
           <div className={`exit ${expandedSection === "section8" ? "visible" : "hidden"}`} onClick={() => handleExpand(null)}>×</div>

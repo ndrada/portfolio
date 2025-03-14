@@ -316,7 +316,8 @@ a:hover {
 }
 
 .web-project {
-  width: 200px;
+  width: 16vw;
+  max-width: 230px;
   padding: 10px;
   flex-shrink: 0;
   margin: 10px;
@@ -439,9 +440,42 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (max-width: 1024px) {
+.socials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-8 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social a {
+  font-size: 1rem;
+}
+
+.social:hover {
+  scale: 1.1;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1279px) {
   .app {
     display: flex;
     flex-direction: column;
@@ -467,6 +501,7 @@ textarea {
 
   .software-project, .web-project, .game-project {
     width: 65vw;
+    max-width: 400px;
   }
 
   .expanded-section4 .web-dev-projects-section, .expanded-section5 .game-dev-projects-section {
