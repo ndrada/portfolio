@@ -1,7 +1,6 @@
 import "./software.css";
 import ledworking from './assets/ledworking.gif'
 import wifiprovisioning from './assets/wifiprovisioning.gif'
-import agicon from '../public/agicon.svg'
 import { Link } from "react-router-dom";
 
 function SoftwarePage() {
@@ -9,7 +8,7 @@ function SoftwarePage() {
         <div className="software-page-container">
             <div className="home-logo">
                 <Link to="/">
-                    <img src={agicon} alt="Home" />
+                    <img src="/agicon.svg" alt="Home" />
                 </Link>
             </div>
             <div className="software-page-header">
@@ -59,7 +58,7 @@ function SoftwarePage() {
                         </div>
                         <div className="area-contents">
                             <h4>Software</h4>
-                            <p>C# (Unity), c++ (ESP32 & Arduino firmware), JS(Web UI for device configuration)</p>
+                            <p>C# (Unity), C++ (ESP32 & Arduino firmware), JavaScript (Web UI for device configuration)</p>
                         </div>
                         <div className="area-contents">
                             <h4>Hardware</h4>

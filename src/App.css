@@ -24,6 +24,7 @@ a {
   font-size: 1.3rem;
   font-weight: bold;
   color: white;
+  text-decoration: none;
 }
 
 a:hover {
@@ -356,7 +357,6 @@ img {
 }
 
 .expanded-section3 .software-projects-section,
-.expanded-section4 .web-dev-projects-section,
 .expanded-section5 .game-dev-projects-section {
   display: flex;
   flex-direction: row;
@@ -365,6 +365,16 @@ img {
   width: 100%;
   height: 100%;
   overflow-x: auto;
+}
+
+.expanded-section4 .web-dev-projects-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.section:hover ~ .expanded-section4 {
+  font-size: 0.4rem;
 }
 
 /* enable vertical scrolling for 'in progress' section */
@@ -429,4 +439,53 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 80vw;
+    padding: 20px;
+    height: auto;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .software-project, .web-project, .game-project {
+    width: 65vw;
+  }
+
+  .expanded-section4 .web-dev-projects-section, .expanded-section5 .game-dev-projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .expanded-section3 .section-details, .expanded-section4 .section-details, .expanded-section5 .section-details, .expanded-section6 .section-details, .expanded-section7 .section-details, .expanded-section8 .section-details {
+    display: none;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .section-details {
+    display: block;
+  }
 }
