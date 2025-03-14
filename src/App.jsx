@@ -65,17 +65,17 @@ function App() {
               <div className="web-project">
                 <img alt="SendMe project logo" src={sendmeicon} />
                 <h4><a href="https://sendmethestuff.netlify.app" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">SendMe</a></h4>
-                <p>Cloud-based file-sharing app, inspired by one of my favorite web application (WeTransfer), built with React, Node.js, & Google Cloud Storage.</p>
+                <p>Cloud-based file-sharing app, inspired by one of my favorite web application (WeTransfer). <br />Built with <strong>React, Node.js, & Google Cloud Storage</strong>.</p>
               </div>
               <div className="web-project">
                 <img alt="Make-a-rezzy logo" src={makearezzy}/>
                 <h4><a href="https://make-a-rezzy.netlify.app" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">Make-A-Rezzy</a></h4>
-                <p>Restaurant reservation system built with React and PostgreSQL. Connected to the management system, the app dynamically displays reservation times and dates based on availability. </p>
+                <p>Restaurant reservation system with dynamic updates. Connected to the management system for reservation control. <br />Built with <strong>React, Node.JS</strong> and <strong>PostgreSQL</strong>.</p>
               </div>
               <div className="web-project">
                 <img alt="rezzy management logo" src={rezzymanagement}/>
                 <h4><a href="https://manage-rezzy.netlify.app" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">Rezzy</a></h4>
-                <p>Sister web-app for managing reservations and setting rules. Features a search section for quick look-up and sorting. Built using React, Node.js and PostgreSQL</p>
+                <p>Sister web-app for managing reservations and setting rules. Features a search section for quick look-up and sorting. <br />Built using <strong>React, Node.js and PostgreSQL</strong>.</p>
               </div>
             </div>
           <div className={`arrow ${expandedSection === "section4" ? "hidden" : ""}`}>&rarr;</div>
@@ -84,19 +84,19 @@ function App() {
         <div className={`section section-5 ${expandedSection === "section5" ? "disable-hover" : ""}`} onClick={() => handleExpand("section5")}>
           <Card title="Game Dev" />
           <div className="section-details">
-            <p>Game you can actually play! Best games? Probably not. But games I force all my friends to play? Absolutely.
+            <p>Games I've made that you can play!
             </p>
           </div>
           <div className="game-dev-projects-section">
               <div className="game-project">
                 <img alt="Scarry Jerry game title" src={scaryjerry}/>
                 <h4><a href="https://ndrada.itch.io/scary-jerry">Scary Jerry</a></h4>
-                <p>Jerry is a zombie with a chainsaw. You have to find the lamp (for obvious reasons) and the gun (for less obvious reasons). Jerry is programmed to kill you on sight. Just saying. Developed in Unity with lots of C#. Good luck!</p>
+                <p>Jerry is a zombie with a chainsaw. You have to find the lamp (for obvious reasons) and the gun (for less obvious reasons). Jerry is programmed to kill you on sight. Just saying. For desktop. Playable on <a href="https://ndrada.itch.io/scary-jerry"><img src="itchioicon.png" className="little-icon"></img></a>.<br /> Developed in <strong>Unity</strong> with lots of <strong>C#</strong>. Good luck!</p>
               </div>
               <div className="game-project">
                 <img alt="Ghost pop game title" src={ghostpop}/>
                 <h4><a href="https://ndrada.itch.io/ghost-pop">Ghost Pop</a></h4>
-                <p>If you like Angry Birds, this is definitely its cousin game (or less accomplished twin). 10 levels. Developed in Unity.</p>
+                <p>If you like Angry Birds, this is definitely its cousin game (or less accomplished twin). 10 levels. For desktop. Playable on <a href="https://ndrada.itch.io/ghost-pop"><img className="little-icon" src="/itchioicon.png"></img></a>.<br />Developed in <strong>Unity</strong>.</p>
               </div>
             </div>
           <div className={`arrow ${expandedSection === "section5" ? "hidden" : ""}`}>&rarr;</div>
@@ -125,6 +125,24 @@ function App() {
             <p>Projects that are currently in development but are worth the mention because they’re cool and I’m super excited about them!
             </p>
           </div>
+          <div className="in-progress-section">
+            <div className="in-progress-projects-list">
+              <div className="in-progress">
+                <img src="/howmuch.png"></img>
+                <div className="about-project">
+                  <h4>How Much</h4>
+                  <p>All-in-one restaurant desktop app. Food cost calculator, recipe storage, inventory tracker & recommendations and cost insights. Currently in development. ETA May 2025. <br />Technologies: <strong>Flutter, Dart</strong>.</p>
+                </div>
+              </div>
+              <div className="in-progress">
+                <img src="/shredscape.png"></img>
+                <div className="about-project">
+                  <h4>ShredScape</h4>
+                  <p>Open world free skate game. No point system, just a cool, cozy, relaxing, passive game with lofi music and nice views. Currently in development. ETA May 2025. <br />Technologies: <strong>Unreal, C++</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className={`arrow ${expandedSection === "section7" ? "hidden" : ""}`}>&rarr;</div>
           <div className={`exit ${expandedSection === "section7" ? "visible" : "hidden"}`} onClick={() => handleExpand(null)}>×</div>
         </div>
@@ -137,16 +155,13 @@ function App() {
           <div className="socials">
             <div className="socials-list">
               <div className="social">
-                <img src="/githubicon.png"></img>
-                <a href="https://github.com/ndrada">GitHub</a>
+                <a href="https://github.com/ndrada"><img src="/githubicon.png"></img></a>
               </div>
               <div className="social">
-                <img src="/linkedinicon.png"></img>
-                <a href="https://www.linkedin.com/in/ndrada/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/ndrada/"><img src="/linkedinicon.png"></img></a>
               </div>
               <div className="social">
-                <img src="/itchioicon.png"></img>
-                <a href="https://itch.io/profile/ndrada">Itch.io</a>
+                <a href="https://itch.io/profile/ndrada"><img src="/itchioicon.png"></img></a>
               </div>
             </div>
           </div>
