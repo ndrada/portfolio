@@ -158,7 +158,7 @@ function App() {
                 <a href="https://github.com/ndrada"><img src="/githubicon.png"></img></a>
               </div>
               <div className="social">
-                <a href="https://www.linkedin.com/in/ndrada/"><img src="/linkedinicon.png"></img></a>
+                <a href="https://www.linkedin.com/in/andradagroseanu/"><img src="/linkedinicon.png"></img></a>
               </div>
               <div className="social">
                 <a href="https://itch.io/profile/ndrada"><img src="/itchioicon.png"></img></a>
